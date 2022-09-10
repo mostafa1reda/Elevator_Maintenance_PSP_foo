@@ -26,3 +26,15 @@ def solution(l):
     sorted_list = sorted(l, key=lambda x: socket.inet_aton(x[0]))
     return sorted_list
 """    
+
+################################# working with dictinaries ############################################
+dictx=[{"a":1,"c":2},{"a":3,"c":4},{"a":12,"c":21},{"a":1,"c":2}]
+
+def get_a(dictx):
+    return dictx.get('a')
+
+dictx.sort(key=get_a)
+
+################################## sort/sorted ###############################################
+sorted : edit in the same list
+sort : return another list 
